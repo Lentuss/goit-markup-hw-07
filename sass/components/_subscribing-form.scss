@@ -37,6 +37,7 @@
   }
 
   &__icon {
+    @extend .social-links__icon;
     margin-left: 10px;
   }
 }

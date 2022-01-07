@@ -16,45 +16,45 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Портфолио</title>
   </head>
   <body>
     <header>
       <section class="header-section">
-        <div class="container">
-          <a href="#" class="logo"><span class="logo-part">Web</span>Studio</a>
+        <div class="container header-section__container">
+          <a href="#" class="logo logo--header"><span class="logo__part">Web</span>Studio</a>
           <nav>
             <ul class="nav-list">
-              <li>
-                <a class="nav-link nav-link-color link-color-change" href="./index.html">Студия</a>
+              <li class="page nav-list__page">
+                <a class="page__link alter-state" href="./index.html" width="48px">Студия</a>
               </li>
-              <li width="78px">
-                <a class="nav-link nav-link-color link-color-change curent" width="78px" href="#"
+              <li class="page nav-list__page">
+                <a class="page__link alter-state page__link--curent" href="./portfolio.html"
                   >Портфолио</a
                 >
               </li>
-              <li><a class="nav-link nav-link-color link-color-change" href="#">Контакты</a></li>
+              <li class="page nav-list__page">
+                <a class="page__link alter-state" href="#">Контакты</a>
+              </li>
             </ul>
           </nav>
-          <ul class="address-list">
-            <li>
-              <a
-                class="address-link address-link-color link-color-change"
-                href="mailto:info@example.com"
-              >
-                <svg class="mail" width="16" height="12">
+          <ul class="contacts-list">
+            <li class="contact contacts-list__contact">
+              <a class="contact__link alter-state" href="mailto:info@example.com">
+                <svg class="contact__icon" width="16" height="12">
                   <use href="./images/icons.svg#mail"></use>
                 </svg>
                 info@example.com
               </a>
             </li>
-            <li>
-              <a class="address-link address-link-color link-color-change" href="tel:380991111111">
-                <svg class="phone" width="10" height="16">
+            <li class="contact">
+              <a class="contact__link alter-state" href="tel:380991111111">
+                <svg class="contact__icon" width="10" height="16">
                   <use href="./images/icons.svg#phone"></use>
                 </svg>
-                +38 099 111 11 11
-              </a>
+                +38 099 111 11 11</a
+              >
             </li>
           </ul>
         </div>
@@ -254,7 +254,7 @@
       <div class="container">
         <div class="footer-block">
           <div class="adress-block">
-            <a class="footer-logo" href="#"><span class="logo-part">Web</span>Studio</a>
+            <a class="logo logo--footer" href="#"><span class="logo__part">Web</span>Studio</a>
             <address class="footer-address">
               <p>г. Киев, пр-т Леси Украинки, 26</p>
               <a class="footer-address-link link-color-change" href="mailto:info@example.com"
@@ -265,46 +265,46 @@
               >
             </address>
           </div>
-          <div class="join-block">
-            <p class="join-offer">Присоединяйтесь</p>
-            <ul>
-              <li class="join-link">
-                <a href="#">
-                  <svg class="join-icon" width="20px" height="20px">
+          <div class="join join--position">
+            <p class="join__offer">Присоединяйтесь</p>
+            <ul class="social-links">
+              <li class="social-links__item">
+                <a class="social-links__link" href="#">
+                  <svg class="social-links__icon" width="20px" height="20px">
                     <use href="./images/icons.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="join-link">
-                <a href="#">
-                  <svg class="join-icon" width="20px" height="20px">
+              <li class="social-links__item">
+                <a href="#" class="social-links__link">
+                  <svg class="social-links__icon" width="20px" height="20px">
                     <use href="./images/icons.svg#twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="join-link">
-                <a href="#">
-                  <svg class="join-icon" width="20px" height="20px">
+              <li class="social-links__item">
+                <a href="#" class="social-links__link">
+                  <svg class="social-links__icon" width="20px" height="20px">
                     <use href="./images/icons.svg#facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="join-link">
-                <a href="#">
-                  <svg class="join-icon" width="20px" height="20px">
+              <li class="social-links__item">
+                <a href="#" class="social-links__link">
+                  <svg class="social-links__icon" width="20px" height="20px">
                     <use href="./images/icons.svg#linkedin"></use>
                   </svg>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="footer-form-block">
-            <p class="mailing-offer">Подпишитесь на рассылку</p>
-            <form class="mailing-form">
-              <input class="mail-input" type="email" placeholder="E-mail" name="email" />
-              <button class="mailing-button" type="submit">
+          <div class="mailing mailing-block">
+            <p class="mailing__offer">Подпишитесь на рассылку</p>
+            <form class="mailing__form">
+              <input class="mailing__input" type="email" placeholder="E-mail" name="email" />
+              <button class="button mailing__button" type="submit">
                 Подписаться
-                <svg class="send-icon" width="24" height="24">
+                <svg class="mailing__icon" width="24" height="24">
                   <use href="images/icons.svg#send" />
                 </svg>
               </button>
