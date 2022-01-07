@@ -95,82 +95,8 @@ a {
 .section {
   padding: 94px 0;
 }
-.why-we-list {
-  display: flex;
-}
-.feature-icon-thumb {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
 
-  width: 270px;
-  height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
-}
-
-.why-we-card {
-  flex-basis: calc((100% - 90px) / 4);
-}
-.why-we-card:not(:last-child) {
-  margin-right: 30px;
-}
-
-.why-we-title {
-  margin: 0 0 10px;
-
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 1.14;
-}
-
-.why-we-content {
-  margin: 0;
-
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
 /* what we do section styles */
-.what-we-do-section {
-  text-align: center;
-  padding-top: 0;
-}
-.what-we-do-title {
-  margin-bottom: 50px;
-
-  font-size: 36px;
-  line-height: 1.17;
-}
-.what-we-do-list {
-  display: flex;
-}
-.what-we-do-list li:not(:last-child) {
-  margin-right: 30px;
-}
-.what-we-do-list li {
-  position: relative;
-  text-align: center;
-  overflow: hidden;
-}
-.label {
-  display: block;
-  width: 370px;
-  position: absolute;
-  bottom: 0;
-  z-index: 1;
-  margin: 0;
-  padding: 25px 0;
-  background: rgba(47, 48, 58, 0.8);
-
-  text-transform: uppercase;
-  color: #fff;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-}
 
 /* our team section styles */
 
