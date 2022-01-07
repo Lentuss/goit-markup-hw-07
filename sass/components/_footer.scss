@@ -1,0 +1,30 @@
+.footer-section {
+  padding: 60px 0;
+  background-color: var(--dark-background-color);
+}
+
+.footer-address {
+  display: flex;
+  flex-direction: column;
+
+  color: #fff;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.footer-address-link {
+  display: inline-block;
+
+  color: #fff;
+  opacity: 60%;
+  text-decoration: none;
+}
+
+.footer-address-link:not(:last-child),
+.footer-address p {
+  margin: 0 0 9px;
+}
+.footer-block {
+  display: flex;
+  align-items: baseline;
+}
