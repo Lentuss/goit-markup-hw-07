@@ -1,17 +1,17 @@
-.checkbox-agreement {
+.checkbox {
   position: relative;
 
   display: flex;
   justify-content: center;
 }
-.checkbox-hidden {
+.checkbox__hidden {
   position: absolute;
   width: 1px;
   height: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
 }
-.new-checkbox {
+.checkbox__new {
   margin-right: 7px;
   width: 16px;
   height: 15px;
@@ -19,28 +19,30 @@
   background-color: #fff;
   border: 2px solid var(--title-color);
   border-radius: 2px;
-}
-.checkbox-hidden:focus + .new-checkbox {
-  border-color: var(--brand-color);
-}
-.checkbox-hidden:checked + .new-checkbox {
-  background-origin: border-box;
-  background-color: var(--brand-color);
-  background-image: url(../images/check.svg);
-  border: 2px solid var(--brand-color);
-  background-size: contain;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
-.agreement-label {
-  margin-bottom: 30px;
 
+  .checkbox__hidden:focus + & {
+    border-color: var(--brand-color);
+  }
+  .checkbox__hidden:checked + & {
+    background-origin: border-box;
+    background-color: var(--brand-color);
+    background-image: url(../images/check.svg);
+    border: 2px solid var(--brand-color);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+}
+.checkbox__label {
+  margin-bottom: 30px;
+}
+.agreement {
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.03em;
 
   color: var(--main-text-color);
 }
-.agreement-label a {
+.agreement__link {
   color: var(--brand-color);
 }
