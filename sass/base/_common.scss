@@ -1,0 +1,35 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-text-color);
+  background-color: #fff;
+  margin: 0;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1200px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  cursor: pointer;
+}
+
+.title-color {
+  margin: 0;
+  color: var(--title-color);
+  letter-spacing: 0.03em;
+}
+.section {
+  padding: 94px 0;
+  margin: 0 auto;
+}
