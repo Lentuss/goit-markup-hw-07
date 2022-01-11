@@ -33,3 +33,11 @@ a {
   padding: 94px 0;
   margin: 0 auto;
 }
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+
+  transform: scale(0.3) translatey(100%);
+  transition: 0.5s ease;
+}
