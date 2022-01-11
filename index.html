@@ -437,8 +437,8 @@
           <label for="name" class="form__field">
             <span class="form__label">Имя</span>
             <input class="form__input" type="text" name="name" id="name" />
-            <span class="form__img">
-              <svg class="form__icon" width="12" height="12">
+            <span class="form__icon">
+              <svg class="form__svg" width="12" height="12">
                 <use href="./images/icons.svg#name" />
               </svg>
             </span>
@@ -447,8 +447,8 @@
           <label for="tel" class="form__field">
             <span class="form__label">Телефон</span>
             <input class="form__input" type="tel" name="tel" id="tel" />
-            <span class="form__img">
-              <svg class="form__icon" width="12" height="12">
+            <span class="form__icon">
+              <svg width="12" height="12">
                 <use href="./images/icons.svg#telephone" />
               </svg>
             </span>
@@ -457,8 +457,8 @@
           <label for="mail" class="form__field">
             <span class="form__label">Почта</span>
             <input class="form__input" type="email" name="mail" id="mail" />
-            <span class="form__img">
-              <svg class="form__icon" width="12" height="12">
+            <span class="form__icon">
+              <svg width="12" height="12">
                 <use href="./images/icons.svg#email" />
               </svg>
             </span>
@@ -472,12 +472,11 @@
             placeholder="Введите текст"
           ></textarea>
 
-          <label class="checkbox" for="agreement">
-            <input class="checkbox__hidden" type="checkbox" name="agreement" id="agreement" />
-            <span class="checkbox__new"></span>
-            <span class="checkbox__agreement-label">
-              Соглашаюсь с рассылкой и принимаю
-              <a class="checkbox__agreement-link" href="#">Условия договора</a></span
+          <label class="checkbox-agreement" for="agreement">
+            <input class="checkbox-hidden" type="checkbox" name="agreement" id="agreement" />
+            <span class="new-checkbox"></span>
+            <span class="agreement-label">
+              Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></span
             >
           </label>
 
