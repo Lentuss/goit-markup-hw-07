@@ -11,10 +11,9 @@
   display: flex;
   flex-direction: column;
 
-  color: #fff;
+  color: var(--white-color);
   font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  @include text(14px, 1.71);
 
   &__physical {
     margin: 0 0 9px;
@@ -23,7 +22,7 @@
   &__link {
     display: inline-block;
 
-    color: #fff;
+    color: var(--white-color);
     opacity: 60%;
     text-decoration: none;
 

@@ -1,10 +1,10 @@
 .clients {
   &__title {
-    margin: 0 0 50px;
     text-align: center;
 
-    font-size: 36px;
-    line-height: 1.17;
+    margin: 0 0 50px;
+
+    @include text(36px, 1.17, 700);
   }
   &__list {
     display: flex;
@@ -15,9 +15,7 @@
 }
 .clients__logo {
   @include transit(color, border-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centered;
 
   border: 1px solid;
   border-color: var(--icon-fill-color);

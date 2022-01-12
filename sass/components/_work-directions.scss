@@ -1,12 +1,12 @@
 .work-direction {
   text-align: center;
+
   padding-top: 0;
 
   &__title {
     margin-bottom: 50px;
 
-    font-size: 36px;
-    line-height: 1.17;
+    @include text(36px, 1.17, 700);
   }
   &__list {
     display: flex;
@@ -23,19 +23,19 @@
 
   &__label {
     display: block;
+
     width: 370px;
     position: absolute;
     bottom: 0;
     z-index: 1;
+
     margin: 0;
     padding: 25px 0;
     background: rgba(47, 48, 58, 0.8);
 
     text-transform: uppercase;
-    color: #fff;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    @include text(14px, 1.14, 700);
     letter-spacing: 0.03em;
+    color: var(--white-color);
   }
 }

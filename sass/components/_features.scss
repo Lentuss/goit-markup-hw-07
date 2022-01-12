@@ -5,37 +5,35 @@
     display: flex;
   }
   &__thumb {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include centered;
+
     margin-bottom: 30px;
 
     width: 270px;
     height: 120px;
-    background: #f5f4fa;
+    background: var(--light-background-color);
     border-radius: 4px;
   }
 
-  &__card {
-    flex-basis: calc((100% - 90px) / 4);
-
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
   &__title {
     margin: 0 0 10px;
 
     text-transform: uppercase;
-    font-size: 14px;
-    line-height: 1.14;
+
+    @include text(14px, 1.14, 700);
   }
 
   &__content {
     margin: 0;
 
-    font-size: 14px;
-    line-height: 1.71;
+    @include text(14px, 1.71);
     letter-spacing: 0.03em;
+  }
+}
+.features__card {
+  flex-basis: calc((100% - 90px) / 4);
+
+  &:not(:last-child) {
+    margin-right: 30px;
   }
 }

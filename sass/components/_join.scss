@@ -6,10 +6,9 @@
     margin: 0 0 20px;
 
     text-transform: uppercase;
-    color: #ffffff;
-    font-size: 14px;
-    line-height: 1.14;
-    font-weight: 700;
+    color: var(--white-color);
+
+    @include text(14px, 1.14, 700);
   }
 }
 .social-links {
@@ -20,13 +19,11 @@
   }
 
   &__icon {
-    fill: #ffffff;
+    fill: var(--white-color);
   }
 }
 .social-links__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centered;
 
   width: 44px;
   height: 44px;

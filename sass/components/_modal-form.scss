@@ -1,12 +1,10 @@
 .modal__call {
+  text-align: center;
+
   margin: 0 0 12px 0;
 
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
+  @include text(20px, 1.15, 700);
   letter-spacing: 0.03em;
-
   color: var(--title-color);
 }
 .form {
@@ -24,8 +22,7 @@
 .form__label {
   margin-bottom: 4px;
 
-  font-size: 12px;
-  line-height: 1.17;
+  @include text(12px, 1.17);
   letter-spacing: 0.01em;
   color: var(--main-text-color);
 }
@@ -34,9 +31,7 @@
   top: 50%;
   left: 12px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centered;
 
   width: 18px;
   height: 18px;
@@ -45,7 +40,7 @@
 }
 .form__icon svg {
   fill: currentColor;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transit(fill);
 
   .form__input:focus + & {
     fill: var(--brand-color);
@@ -63,8 +58,8 @@
   box-sizing: border-box;
   border-radius: 4px;
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1), outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transit(border-color, color, outline);
+
   &:focus {
     border-color: var(--brand-color);
     outline: var(--brand-color);
@@ -80,12 +75,10 @@
   box-sizing: border-box;
   border-radius: 4px;
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1), outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transit(border-color, color, outline);
 
   &::placeholder {
-    font-size: 14px;
-    line-height: 1.14;
+    @include text(14px, 1.14);
     letter-spacing: 0.01em;
 
     color: rgba(117, 117, 117, 0.5);
@@ -96,32 +89,13 @@
   }
 }
 .modal-btn {
-  display: block;
-  text-align: center;
-  align-items: center;
+  @extend .button;
+  @include transit(background-color);
 
-  width: 200px;
-  height: 50px;
   margin: 0 auto;
-
-  background: var(--brand-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border-color: transparent;
-  cursor: pointer;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-
-  color: #ffffff;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    background: #188ce8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--button-change-color);
   }
 }

@@ -1,5 +1,6 @@
 .contacts-list {
   display: flex;
+
   margin-left: auto;
 
   &__contact:not(:last-child) {
@@ -10,10 +11,9 @@
 .contact {
   &__link {
     @extend .page__link;
-    color: var(--main-text-color);
+    @include centered;
 
-    display: flex;
-    align-items: center;
+    color: var(--main-text-color);
   }
 
   &__icon {

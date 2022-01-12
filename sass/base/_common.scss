@@ -27,8 +27,10 @@ a {
 .title-color {
   margin: 0;
   color: var(--title-color);
+  @include text(36px, 1.17, 700);
   letter-spacing: 0.03em;
 }
+
 .section {
   padding: 94px 0;
   margin: 0 auto;
@@ -40,4 +42,29 @@ a {
 
   transform: scale(0.3) translatey(100%);
   transition: 0.5s ease;
+}
+
+.button {
+  @include centered;
+
+  padding: 10px 0;
+
+  cursor: pointer;
+
+  background-color: var(--brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+  width: 200px;
+  height: 50px;
+
+  font-family: inherit;
+  @include text(16px, 1.87, 700);
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+%main-bold-text {
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 700;
 }
